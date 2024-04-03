@@ -44,7 +44,7 @@ body{
   }
   
   body.light{
-    background-image: linear-gradient(to right, #f5e5bb, #e0aeae, #afd8c4, #7693c6); 
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
     color: black;
   }
 
@@ -58,6 +58,6 @@ body{
   }
   
   body.dark{
-    background-image: linear-gradient(to right, #3a372d, #3a2f2f, #1c2621, #2a313d); 
+    background: black;
     color: white;
   }

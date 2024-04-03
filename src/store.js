@@ -7,6 +7,8 @@ export const useStore = create((set) => ({
         benson: [],
         pops: [],
         skips: [],
+        muscleman: [],
+        highfive: [],
         done: []
       },
       addTask: (column, task) =>
