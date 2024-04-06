@@ -26,14 +26,6 @@ body{
     align-items: center;
     justify-content: center;
   }
-
-  .flex-wrap {
-    display: flex;
-    gap: 4px;
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
   
   .add-task input {
     padding: 8px;

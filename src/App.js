@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import "./App.css";
 import Board from "./board";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  // const [theme, setTheme] = useState("light");
 
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
-
+  // useEffect(() => {
+  //   document.body.className = theme;
+  // }, [theme]);
+// container
   return (
-    <div className="container pl-5 pr-5 md:pl-14 md:pr-14 w-auto h-screen">
-      <div className="flex items-center justify-between mt-5 mb-5">
+    <div className="pl-5 pr-5 md:pl-14 md:pr-14 w-auto mt-5 h-screen">
+      {/* <div className="flex items-center justify-between mt-5 mb-5">
         <div className="text-center font-semibold text-2xl">
           Regular Show
         </div>
@@ -290,7 +290,7 @@ function App() {
             </svg>
           )}
         </div>
-      </div>
+      </div> */}
       <Board />
     </div>
   );

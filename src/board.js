@@ -2,10 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import mordecai from "./images/mordecai.png";
 import rigby from "./images/rigby.png";
 import benson from "./images/benson.png";
-import pops from "./images/pops.png";
-import skips from "./images/skips.png";
-import muscleman from "./images/kasadam.png";
-import highfive from "./images/cakbeslik.png";
 import great from "./images/great.png";
 import { useStore } from "./store";
 
@@ -80,7 +76,7 @@ const Board = () => {
 
   const renderTasks = (column) =>
     tasks[column].map((task, index) => (
-      <div key={index} id={index} draggable onDragStart={(e) => handleDragStart(e, index, column)} className="taskbg m-2 p-2 rounded-md cursor-pointer">
+      <div key={index} id={index} draggable onDragStart={(e) => handleDragStart(e, index, column)} className="taskbg m-2 p-2 rounded-sm cursor-pointer">
         <div className="text-sm font-medium">
         <input className="taskbg" type="text" value={task} onChange={(e) => handleTaskChange(e, index, column)}/>
         </div> 
@@ -132,9 +128,9 @@ const Board = () => {
         </svg>
       </div>
 
-      <div className="flex gap-4 w-full flex-wrap justify-center">
+      <div className="flex w-max gap-4">
         <div
-          className="w-80 h-auto bg-slate-400 rounded-md p-2 shadow"
+          className=" w-80 h-auto bg-slate-400 rounded-sm p-2 shadow"
           onDragOver={handleDragOver}
           onDrop={(e) => handleDrop(e, "mordecai")}
         >
@@ -146,7 +142,7 @@ const Board = () => {
         </div>
 
         <div
-          className="w-80 h-auto bg-amber-600 rounded-md p-2 shadow"
+          className="w-80 h-auto bg-amber-600 rounded-sm p-2 shadow"
           onDragOver={handleDragOver}
           onDrop={(e) => handleDrop(e, "rigby")}
         >
@@ -158,7 +154,7 @@ const Board = () => {
         </div>
 
         <div
-          className="w-80 h-auto bg-red-500 rounded-md p-2 shadow"
+          className="w-80 h-auto bg-red-500 rounded-sm p-2 shadow"
           onDragOver={handleDragOver}
           onDrop={(e) => handleDrop(e, "benson")}
         >
@@ -170,55 +166,7 @@ const Board = () => {
         </div>
 
         <div
-          className="w-80 h-auto bg-rose-300 rounded-md p-2 shadow"
-          onDragOver={handleDragOver}
-          onDrop={(e) => handleDrop(e, "pops")}
-        >
-          <div className=" flex justify-left items-center">
-            <img src={pops} className=" w-14 rounded-full" alt="alt" />
-            <div className="font-semibold ml-2">Pops</div>
-          </div>
-          {renderTasks("pops")}
-        </div>
-
-        <div
-          className="w-80 h-auto bg-cyan-400 rounded-md p-2 shadow"
-          onDragOver={handleDragOver}
-          onDrop={(e) => handleDrop(e, "skips")}
-        >
-          <div className=" flex justify-left items-center">
-            <img src={skips} className=" w-14 rounded-full" alt="alt" />
-            <div className="font-semibold ml-2">Skips</div>
-          </div>
-          {renderTasks("skips")}
-        </div>
-
-        <div
-          className="w-80 h-auto bg-lime-300 rounded-md p-2 shadow"
-          onDragOver={handleDragOver}
-          onDrop={(e) => handleDrop(e, "muscleman")}
-        >
-          <div className=" flex justify-left items-center">
-            <img src={muscleman} className=" w-14 rounded-full" alt="alt" />
-            <div className="font-semibold ml-2">Muscle man</div>
-          </div>
-          {renderTasks("muscleman")}
-        </div>
-
-        <div
-          className="w-80 h-auto bg-slate-300 rounded-md p-2 shadow"
-          onDragOver={handleDragOver}
-          onDrop={(e) => handleDrop(e, "highfive")}
-        >
-          <div className=" flex justify-left items-center">
-            <img src={highfive} className=" w-14 rounded-full" alt="alt" />
-            <div className="font-semibold ml-2">High Five</div>
-          </div>
-          {renderTasks("highfive")}
-        </div>
-
-        <div
-          className="w-80 h-auto bg-cyan-300 rounded-md p-2 shadow"
+          className="w-80 h-auto bg-cyan-300 rounded-sm p-2 shadow"
           onDragOver={handleDragOver}
           onDrop={(e) => handleDrop(e, "done")}
         >
