@@ -76,7 +76,7 @@ const Board = () => {
 
   const renderTasks = (column) =>
     tasks[column].map((task, index) => (
-      <div key={index} id={index} draggable onDragStart={(e) => handleDragStart(e, index, column)} className="taskbg m-2 p-2 rounded-sm cursor-pointer">
+      <div key={index} id={index} draggable onDragStart={(e) => handleDragStart(e, index, column)} className="taskbg m-2 p-2 rounded-sm cursor-pointer bg-white">
         <div className="text-sm font-medium">
         <input className="taskbg" type="text" value={task} onChange={(e) => handleTaskChange(e, index, column)}/>
         </div> 
