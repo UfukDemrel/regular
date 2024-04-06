@@ -10,7 +10,7 @@ function App() {
   // }, [theme]);
 // container
   return (
-    <div className="pl-5 pr-5 md:pl-0 md:pr-0 flex w-auto mt-5 justify-center">
+    <div className="pl-5 pr-5 md:pl-14 md:pr-14 w-auto mt-5 h-screen">
       {/* <div className="flex items-center justify-between mt-5 mb-5">
         <div className="text-center font-semibold text-2xl">
           Regular Show
