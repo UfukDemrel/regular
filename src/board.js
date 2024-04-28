@@ -8,7 +8,6 @@ import muscleman from "./images/kasadam.png";
 import highfive from "./images/cakbeslik.png";
 import great from "./images/great.png";
 import { useStore } from "./store";
-import Zustand from "./zustand";
 
 const Board = () => {
   const [modal, setModal] = useState(false);
@@ -135,7 +134,6 @@ const Board = () => {
 
   return (
     <>
-    <Zustand/>
       {modal && (
         <div className="add-task">
           <div className="text-center bg-gray-400 p-6 rounded-xl shadow">
