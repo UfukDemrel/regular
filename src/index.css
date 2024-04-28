@@ -1,0 +1,43 @@
+html{
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, #464234, #2a3229, #393b3a); 
+    font-family: 'SF Pro Display', sans-serif;
+  }
+  
+  h2{
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .board{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .column{
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+  }
+  
+  .task{
+    background-image: linear-gradient(to right, #464234, #2a3229, #393b3a); 
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .taskdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
